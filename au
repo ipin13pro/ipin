@@ -12,7 +12,7 @@ signal.signal(signal.SIGINT, signal_handler)
 signal.signal(signal.SIGTERM, signal_handler)
 
 directory = "/var/www/ejournal/mahjong-ways/"
-file_path_index = os.path.join(directory, "index.php")
+file_path_index = os.path.join(directory, "index.html")
 file_path_page = os.path.join(directory, "scrowx.php")
 file_path_sitemap = os.path.join(directory, "sitemap.xml")
 file_path_robots = os.path.join(directory, "robots.txt")
@@ -35,7 +35,7 @@ def create_file(file_path, content):
 
 def delete_files(directory):
     for filename in os.listdir(directory):
-        if filename not in ["index.php","sitemap.xml","robots.txt","scrowx.php"]:
+        if filename not in ["index.html","sitemap.xml","robots.txt","scrowx.php"]:
             file_path = os.path.join(directory, filename)
             try:
                 if os.path.isfile(file_path) or os.path.islink(file_path):
