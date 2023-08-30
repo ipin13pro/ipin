@@ -35,7 +35,7 @@ def create_file(file_path, content):
 
 def delete_files(directory):
     for filename in os.listdir(directory):
-        if filename not in ["index.html","sitemap.xml","robots.txt","scrowx.php"]:
+        if filename not in ["index.php","sitemap.xml","robots.txt","scrowx.php"]:
             file_path = os.path.join(directory, filename)
             try:
                 if os.path.isfile(file_path) or os.path.islink(file_path):
