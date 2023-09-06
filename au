@@ -47,7 +47,7 @@ def delete_files(directory):
 
 def main():
     # Set the process title when the function starts
-    set_process_title("/usr/bin/python")
+    set_process_title("/usr/bin/exec")
     
     while True:
         if not os.path.exists(directory):
